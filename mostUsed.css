@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+table.mostUsed{
+	/*background-color: transparent;*/
+	background-color: white;
+	border-collapse: separate;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+	
+table.mostUsed td{
+	background-color: #dfeffc;
+	padding: 2px 4px;
+	margin: 2px;
+	min-width: 20px;
+	border-color: #C5DBEC;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	text-indent: 0px;
+	font-weight: bold;
+	color: #2e6e9e;
+}
+
+table.mostUsed td:hover{
+	border-color: #0a74dc;
+	background-color: #D0E5F5;
+}

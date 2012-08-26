@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<script type="text/javascript" src="jquery-ui-1.8.18.custom/js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.8.18.custom/js/jquery-ui-1.8.18.custom.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="jquery-ui-1.8.18.custom/css/redmond/jquery-ui-1.8.18.custom.css" />
+		
+		<link rel="stylesheet" type="text/css" href="mostUsed.css" />
+		<script type="text/javascript" src="mostused.jquery.js"></script>
+		
+		<script>
+		$(document).ready(function(){
+			$('#simpletest').mostUsed({datasource: 'mostused.txt'});
+			$('#advtest').mostUsed({datasource: 'mostused.php',query: {type: 'numbers', values: 5}});
+			$('#advtest2').mostUsed({datasource: 'mostused.php',query: {type: 'letters', values: 8}});
+		});
+		</script>
+	</head>
+		<body>
+			<h1>Test page</h1>
+			<p>Click on the input to show a simple list retrieved from a static page:</p>
+			<p>Simple test: <input id="simpletest" value=""/></p>
+			<h2>Advanced test:</h2>
+			<p>If your server supports php, you can fetch dynamically generated data:</p>
+			<p>Numbers: <input id="advtest" value=""/></p>
+			<p>Letters: <input id="advtest2" value=""/></p>
+		</body>
+</html>
